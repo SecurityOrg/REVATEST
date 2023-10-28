@@ -45,7 +45,7 @@ def evaluate():
 @app.route('/comment', methods=['GET', 'POST'])
 def comment():
     comment = request.args.get('comment', '')
-    return f"<html><body>Last comment: {comment}</body></html>"
+    return f"<html><body>Last comments: {comment}</body></html>"
 
 @app.route('/readfile')
 def read_file():
