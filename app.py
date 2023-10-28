@@ -6,7 +6,6 @@ from flask import Flask, request
 app = Flask(__name__)
 
 app.secret_key = 'secret'
-
 users = {'admin': 'password123'}
 
 @app.route('/login', methods=['POST'])
